@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --gray: #eff0f8;
+  --dark-blue: #4e4f5c;
+  --dark-blue-lighten: #4e4f5c80;
+  --purple: #6d71f9;
+  --blue: #54c1fb;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f6f6f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 40px);
+}
+
+.container {
+  background: white;
+  max-width: 400px;
+  border-radius: 15px;
+  border: 1px solid var(--gray);
+}
+
+.form-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-title {
+  padding: 0 30px;
+  padding-top: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+.close {
+  width: 20px;
+  height: 20px;
+  color: var(--dark-blue-lighten);
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.form {
+  padding: 0 30px;
+  padding-top: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+input {
+  height: 40px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  padding-left: 10px;
+  color: var(--dark-blue);
+  caret-color: var(--purple);
+  outline: none;
+}
+
+input:focus {
+  border-color: var(--purple);
+}
+
+label {
+  color: var(--dark-blue);
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: 7px;
+}
+
+.form-message {
+  border-bottom: 1px solid var(--gray);
+  padding: 0 30px;
+}
+
+.message-container {
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #b7e0f6;
+  background: rgba(84, 193, 251, 0.2);
+  padding: 14px;
+  margin-bottom: 25px;
+}
+
+.icon {
+  font-size: 13px;
+  margin-right: 14px;
+  color: #00a6ff;
+}
+
+.message {
+  font-size: 11px;
+  color: #00a6ff;
+  margin: 0;
+}
+
+.form-controls {
+  padding: 20px 0;
+  padding-top: 8px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.btn {
+  flex-basis: 30%;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  margin: 5px;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.submit {
+  background: var(--purple);
+  color: white;
+  border: none;
+}
+
+.cancel {
+  border: 1px solid #dcdcdc;
+  color: var(--dark-blue);
+}
